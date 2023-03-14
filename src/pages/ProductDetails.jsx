@@ -166,7 +166,7 @@ const ProductDetails = () => {
                         </Col>
 
                         <Col lg="12" className='mt-5'>
-                            <h2 className='related_title'> You might also like</h2>
+                            <h2 className='related_title'> You might also like gggreeeeeeeeeee</h2>
                         </Col>
                         <ProductList data={relatedProducts} />
                     </Row>
