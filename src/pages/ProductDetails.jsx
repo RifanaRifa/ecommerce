@@ -11,8 +11,11 @@ import { useDispatch } from 'react-redux';
 import { cartActions } from '../redux/slice/cartSlice';
 import { toast } from "react-toastify";
 
+// import { db } from "../firebase.config";
+// import { doc, getDoc } from "firebase/firestore"
 
 const ProductDetails = () => {
+    // const [product, setProduct] = useState({})
     const [tab, setTab] = useState('desc');
     const reviewUser = useRef('')
     const reviewMsg = useRef('')
@@ -22,6 +25,18 @@ const ProductDetails = () => {
 
     const { id } = useParams();
     const product = products.find(item => item.id === id)
+
+    // const docRef = doc(db, " products", id)
+    // useEffect(() => {
+    //     const getProduct = async () => {
+    //         const docSnap = await getDoc(docRef)
+    //         if (docSnap.exists()) {
+    //             setProduct(docSnap.data())
+    //         }else{
+    //             console.log("no products!")
+    //         }
+    //     }
+    // }, [])
 
     const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category } = product;
 
@@ -166,7 +181,7 @@ const ProductDetails = () => {
                         </Col>
 
                         <Col lg="12" className='mt-5'>
-                            <h2 className='related_title'> You might also like gggreeeeeeeeeee</h2>
+                            <h2 className='related_title'> You might also like gggre</h2>
                         </Col>
                         <ProductList data={relatedProducts} />
                     </Row>

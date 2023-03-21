@@ -16,16 +16,17 @@ import { toast } from 'react-toastify';
 
 const ProductCard = ({ item }) => {
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const addToCart = () => {
-        dispatch(cartActions.addItem({
+        dispatch(
+            cartActions.addItem({
 
-            id: item.id,
-            productName: item.productName,
-            price: item.price,
-            imgUrl: item.imgUrl,
-        })
+                id: item.id,
+                productName: item.productName,
+                price: item.price,
+                imgUrl: item.imgUrl,
+            })
         );
         // alert("product added to the cart");
         toast.success("prouct added sucessfully");
@@ -47,7 +48,7 @@ const ProductCard = ({ item }) => {
                 </div>
 
                 <div className='product_card-bottom d-flex align-items- center justify-content-between'>
-                    <span className='price'> {item.price} </span>
+                    <span className='price'> ${item.price} </span>
                     <motion.span whileTap={{ scale: 1.2 }} onClick={addToCart}> <i class="ri-add-line"></i></motion.span>
                     {/*onClick={addToCart}reduce la ullathu*/}
                 </div>
@@ -56,7 +57,7 @@ const ProductCard = ({ item }) => {
 
             </div>
         </Col>
-    )
-}
+    );
+};
 
-export default ProductCard
+export default ProductCard;
