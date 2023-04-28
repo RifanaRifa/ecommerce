@@ -16,29 +16,29 @@ const Shop = () => {
     const handleFilter = e => {
 
         const filterValue = e.target.value
-        if (filterValue === "sofa") {
+        if (filterValue === "Sofa") {
             const filteredProducts = products.filter(item => item.category === "sofa")
             setProductsData(filteredProducts);
         }
 
-        if (filterValue === "mobile") {
+        if (filterValue === "Mobile") {
             const filteredProducts = products.filter(item => item.category === "mobile")
             setProductsData(filteredProducts);
         }
 
 
-        if (filterValue === "chair") {
+        if (filterValue === "Chair") {
             const filteredProducts = products.filter(item => item.category === "chair")
             setProductsData(filteredProducts);
         }
 
-        if (filterValue === "watch") {
+        if (filterValue === "Watch") {
             const filteredProducts = products.filter(item => item.category === "watch")
             setProductsData(filteredProducts);
         }
 
 
-        if (filterValue === "wireless") {
+        if (filterValue === "Wireless") {
             const filteredProducts = products.filter(item => item.category === "wireless")
             setProductsData(filteredProducts);
         }

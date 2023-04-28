@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useParams } from 'react-router-dom';
-import products from '../assets/data/products';
+
 import Helmet from '../components/helmet/Helmet';
 import CommonSection from '../components/UI/CommonSection';
 import "../styles/product-details.css";
@@ -11,39 +11,46 @@ import { useDispatch } from 'react-redux';
 import { cartActions } from '../redux/slice/cartSlice';
 import { toast } from "react-toastify";
 
-// import { db } from "../firebase.config";
-// import { doc, getDoc } from "firebase/firestore"
+import { db } from "../firebase.config";
+import { doc, getDoc } from "firebase/firestore"
+import useGetData from "../custom-hooks/useGetData"
 
 const ProductDetails = () => {
-    // const [product, setProduct] = useState({})
+    const [product, setProduct] = useState({});
     const [tab, setTab] = useState('desc');
-    const reviewUser = useRef('')
-    const reviewMsg = useRef('')
-    const dispatch = useDispatch()
+    const reviewUser = useRef('');
+    const reviewMsg = useRef('');
+    const dispatch = useDispatch();
 
     const [rating, setRating] = useState(null);
 
     const { id } = useParams();
-    const product = products.find(item => item.id === id)
 
-    // const docRef = doc(db, " products", id)
-    // useEffect(() => {
-    //     const getProduct = async () => {
-    //         const docSnap = await getDoc(docRef)
-    //         if (docSnap.exists()) {
-    //             setProduct(docSnap.data())
-    //         }else{
-    //             console.log("no products!")
-    //         }
-    //     }
-    // }, [])
+    const { data: products } = useGetData("products");
+    // const product = products.find(item => item.id === id)
 
-    const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category } = product;
+    const docRef = doc(db, " products", id)
+    useEffect(() => {
+        const getProduct = async () => {
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                setProduct(docSnap.data())
+            } else {
+                console.log("no products!")
+            }
+        };
+        getProduct();
+    }, []);
+
+    const { imgUrl, productName, price,
+        //  avgRating, reviews,
+        description, shortDesc, category } = product;
 
     const relatedProducts = products.filter(item => item.category === category);
 
-    const submitHandler = (e) => {
-        e.preventDefault()
+    const submitHandler = e => {
+        e.preventDefault();
         const reviewUserName = reviewUser.current.value;
         const reviewUserMsg = reviewMsg.current.value;
 
@@ -64,7 +71,8 @@ const ProductDetails = () => {
                 image: imgUrl,
                 productName,
                 price
-            }))
+            })
+        );
         toast.success("product added successfully");
     };
 
@@ -98,13 +106,13 @@ const ProductDetails = () => {
                                     </div>
                                     {/* <p>({avgRating}ratings)</p> */}
                                     <p>
-                                        (<span>{avgRating}</span> ratings)
+                                        {/* (<span>{avgRating}</span> ratings) */}
                                     </p>
 
                                 </div>
                                 <div className='d-flex align-items-center gap-5'>
                                     <span className='product_price'>${price}</span>
-                                    <span>category:{category}</span>
+                                    <span>Category:{category}</span>
                                 </div>
 
                                 <p className='mt-3'>{shortDesc}</p>
@@ -128,8 +136,9 @@ const ProductDetails = () => {
                                     onClick={() => setTab('desc')}
                                 > Description </h6>
                                 <h6 className={`${tab === 'rev' ? 'active_tab' : ""}`}
-                                    onClick={() => setTab('rev')}
-                                >Reviews ({reviews.length})</h6>
+                                    onClick={() => setTab('rev')}>
+                                    Reviews
+                                </h6>
 
                             </div>
                             {
@@ -140,7 +149,7 @@ const ProductDetails = () => {
                                     <div className='product_review mt-5'>
 
                                         <div className='review_wrapper'>
-                                            <ul>
+                                            {/* <ul>
                                                 {
                                                     reviews?.map((item, index) => (
                                                         <li key={index} className="mb-4">
@@ -150,7 +159,7 @@ const ProductDetails = () => {
                                                         </li>
                                                     ))
                                                 }
-                                            </ul>
+                                            </ul> */}
                                             <div className="review_form">
                                                 <h4>Leave Your Experience</h4>
                                                 <form action="" onSubmit={submitHandler}>
@@ -181,7 +190,7 @@ const ProductDetails = () => {
                         </Col>
 
                         <Col lg="12" className='mt-5'>
-                            <h2 className='related_title'> You might also like gggre</h2>
+                            <h2 className='related_title'> You might also like</h2>
                         </Col>
                         <ProductList data={relatedProducts} />
                     </Row>
