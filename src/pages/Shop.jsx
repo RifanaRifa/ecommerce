@@ -16,30 +16,35 @@ const Shop = () => {
     const handleFilter = e => {
 
         const filterValue = e.target.value
-        if (filterValue === "Sofa") {
+        if (filterValue === "sofa") {
             const filteredProducts = products.filter(item => item.category === "sofa")
             setProductsData(filteredProducts);
         }
 
-        if (filterValue === "Mobile") {
-            const filteredProducts = products.filter(item => item.category === "mobile")
-            setProductsData(filteredProducts);
-        }
-
-
-        if (filterValue === "Chair") {
+        if (filterValue === "chair") {
             const filteredProducts = products.filter(item => item.category === "chair")
             setProductsData(filteredProducts);
         }
 
-        if (filterValue === "Watch") {
-            const filteredProducts = products.filter(item => item.category === "watch")
+
+        if (filterValue === "table") {
+            const filteredProducts = products.filter(item => item.category === "table")
+            setProductsData(filteredProducts);
+        }
+
+        if (filterValue === "lamp") {
+            const filteredProducts = products.filter(item => item.category === "lamp")
             setProductsData(filteredProducts);
         }
 
 
-        if (filterValue === "Wireless") {
-            const filteredProducts = products.filter(item => item.category === "wireless")
+        if (filterValue === "clock") {
+            const filteredProducts = products.filter(item => item.category === "clock")
+            setProductsData(filteredProducts);
+        }
+
+        if (filterValue === "plant") {
+            const filteredProducts = products.filter(item => item.category === "plant")
             setProductsData(filteredProducts);
         }
     };
@@ -62,10 +67,11 @@ const Shop = () => {
                                 <select onChange={handleFilter}>
                                     <option>Filter By Category </option>
                                     <option value="sofa">Sofa</option>
-                                    <option value="mobile">Mobile</option>
                                     <option value="chair">Chair</option>
-                                    <option value="watch">Watch</option>
-                                    <option value="wireless">Wireless</option>
+                                    <option value="table">Table</option>
+                                    <option value="lamp">Lamp</option>
+                                    <option value="clock">Clock</option>
+                                    <option value="plant">Plant</option>
                                 </select>
                             </div>
                         </Col>

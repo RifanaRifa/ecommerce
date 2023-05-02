@@ -28,13 +28,13 @@ const Home = () => {
     const year = new Date().getFullYear();
 
     useEffect(() => {
-        const filteredTrendingProducts = products.filter((item) => item.category === "chair");
+        const filteredTrendingProducts = products.filter((item) => item.category === "Chair");
 
-        const filteredBestSalesProducts = products.filter((item) => item.category === "sofa");
+        const filteredBestSalesProducts = products.filter((item) => item.category === "Sofa");
 
-        const filteredMobileProducts = products.filter((item) => item.category === "mobile");
-        const filteredWirelessProducts = products.filter((item) => item.category === "wireless")
-        const filteredPopularProducts = products.filter((item) => item.category === "watch")
+        const filteredMobileProducts = products.filter((item) => item.category === "Mobile");
+        const filteredWirelessProducts = products.filter((item) => item.category === "Wireless")
+        const filteredPopularProducts = products.filter((item) => item.category === "Watch")
 
 
 
@@ -60,7 +60,7 @@ const Home = () => {
                                 <h2>Make Your Interior More Minimalistic & Modern</h2>
                                 <p>Lorem ipsum dolor   </p>
 
-                                <motion.button whileTap={{ scale: 1.2 }} className='buy_btn'> <Link to="shop">SHOP NOW</Link> </motion.button>
+                                <motion.button whileTap={{ scale: 1.2 }} className='buy_btn'> <Link to="/shop">SHOP NOW</Link> </motion.button>
                                 {/* < button className='buy_btn'> <Link to="/shop">SHOP NOW</Link></button> */}
                             </div>
                         </Col>

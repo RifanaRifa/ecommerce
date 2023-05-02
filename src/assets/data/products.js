@@ -1,32 +1,33 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/sofa-1.jpg";
+import productImg02 from "../images/sofa-2.jpg";
+import productImg03 from "../images/sofa-3.png";
+import productImg033 from "../images/sofa-033.jpg";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg04 from "../images/sofa-4.jpg";
+import productImg05 from "../images/sofa-5.jpg";
+import productImg06 from "../images/sofa-6.jpg";
+import productImg007 from "../images/tab-1.jpg";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/sofa-7.jpg";
+import productImg08 from "../images/tab-2.jpg";
+import productImg09 from "../images/tab-3.png";
+import productImg10 from "../images/tab-4.jpg";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/tab-5.jpg";
+import productImg14 from "../images/tab-6.jpg";
+import productImg15 from "../images/tab-7.jpg";
+import productImg16 from "../images/tab-8.jpg";
+import productImg17 from "../images/tab-9.jpg";
+import productImg18 from "../images/tab-10.jpg";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg19 from "../images/tab-11.jpg";
+import productImg20 from "../images/tab-12.jpg";
+import productImg21 from "../images/flo-1.jpg";
+import productImg22 from "../images/flo-2.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg23 from "../images/flo-3.jpg";
 
-import productImg25 from "../images/wireless-03.png";
+import productImg25 from "../images/flo-4.jpg";
 
 const products = [
   {
@@ -34,7 +35,7 @@ const products = [
     productName: "Stone and Beam Westview ",
     imgUrl: productImg01,
     category: "sofa",
-    price: 193,
+    price: 293,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -73,9 +74,9 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Chair Wooden",
     imgUrl: productImg03,
-    category: "sofa",
+    category: "chair",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -95,10 +96,10 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    productName: "Organic Chair Fiberglass ",
+    imgUrl: productImg033,
+    category: "chair",
+    price: 153,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -117,10 +118,10 @@ const products = [
   },
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Wegner Classic 290",
     imgUrl: productImg04,
     category: "sofa",
-    price: 163,
+    price: 395,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -140,10 +141,10 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "RO™ Sofa",
     imgUrl: productImg05,
     category: "sofa",
-    price: 163,
+    price: 285,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -163,10 +164,10 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Galaxy Dining Chair",
     imgUrl: productImg06,
     category: "sofa",
-    price: 163,
+    price: 264,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -185,10 +186,10 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "OW602/603 Sofa",
     imgUrl: productImg07,
-    category: "chair",
-    price: 99,
+    category: "Sofa",
+    price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -208,10 +209,10 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
+    productName: "Triiio Dining Table",
     imgUrl: productImg007,
-    category: "sofa",
-    price: 173,
+    category: "table",
+    price: 279,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -231,10 +232,10 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "ZP75 Dining Table",
     imgUrl: productImg08,
-    category: "chair",
-    price: 89,
+    category: "table",
+    price: 269,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -254,10 +255,10 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "The April Tables",
     imgUrl: productImg09,
-    category: "chair",
-    price: 112,
+    category: "table",
+    price: 292,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -277,10 +278,10 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
+    productName: "Solvay Table",
     imgUrl: productImg13,
-    category: "mobile",
-    price: 799,
+    category: "table",
+    price: 208,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -299,9 +300,9 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
+    productName: "Buffet Lamb",
     imgUrl: productImg10,
-    category: "chair",
+    category: "lamp",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -321,10 +322,10 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "Pilke 18 Pendant Lamp",
     imgUrl: productImg14,
-    category: "mobile",
-    price: 799,
+    category: "lamp",
+    price: 114,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -344,10 +345,10 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
+    productName: "Caché XL Pendant Lamp",
     imgUrl: productImg15,
-    category: "mobile",
-    price: 599,
+    category: "lamp",
+    price: 109,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -367,10 +368,10 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
+    productName: "Pilke 20 Pendant Lamp",
     imgUrl: productImg16,
-    category: "mobile",
-    price: 799,
+    category: "lamp",
+    price: 125,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -390,9 +391,9 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
+    productName: "Round Wall Mirror",
     imgUrl: productImg17,
-    category: "mobile",
+    category: "clock",
     price: 899,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -413,9 +414,9 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
+    productName: "Acer Aspire E 15",
     imgUrl: productImg18,
-    category: "mobile",
+    category: "clock",
     price: 699,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -436,9 +437,9 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Wood Clock",
     imgUrl: productImg19,
-    category: "watch",
+    category: "clock",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -459,9 +460,9 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Samsung Galaxy Tab A",
     imgUrl: productImg20,
-    category: "watch",
+    category: "clock",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -482,10 +483,10 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Porro Cook",
     imgUrl: productImg21,
-    category: "watch",
-    price: 299,
+    category: "plant",
+    price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -505,10 +506,10 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Adipiscing Cursus",
     imgUrl: productImg22,
-    category: "watch",
-    price: 399,
+    category: "plant",
+    price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -528,10 +529,10 @@ const products = [
 
   {
     id: "20",
-    productName: "Beat Studio Wireless",
+    productName: "Sapien Libero",
     imgUrl: productImg23,
-    category: "wireless",
-    price: 199,
+    category: "plant",
+    price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -551,10 +552,10 @@ const products = [
 
   {
     id: "22",
-    productName: "Beat EP Headphones",
+    productName: "Donec Eu Cook",
     imgUrl: productImg25,
-    category: "wireless",
-    price: 199,
+    category: "plant",
+    price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
