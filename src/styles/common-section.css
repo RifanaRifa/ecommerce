@@ -1,8 +1,8 @@
 .common_section {
     background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
-        url("../assets/images/Luxury-Living-Room.2.jpg") no-repeat center center;
-    background-size: cover;
-    /* height: 300px; */
+        url("../assets/images/luxury-01.jpg") no-repeat center center;
+    background-size: center;
+    height: 300px;
     padding: 100px 0px;
     display: flex;
     align-items: center;

@@ -24,17 +24,20 @@ const Home = () => {
     const [wirelessProducts, setWirelessProduct] = useState([]);
     const [popularProducts, setPopularProduct] = useState([]);
 
+    const [plantProducts, setPlantProduct] = useState([]);
+
     // const [data, setdata] = useState(products);
     const year = new Date().getFullYear();
 
     useEffect(() => {
-        const filteredTrendingProducts = products.filter((item) => item.category === "Chair");
+        const filteredTrendingProducts = products.filter((item) => item.category === "sofa");
 
-        const filteredBestSalesProducts = products.filter((item) => item.category === "Sofa");
+        const filteredBestSalesProducts = products.filter((item) => item.category === "chair");
 
-        const filteredMobileProducts = products.filter((item) => item.category === "Mobile");
-        const filteredWirelessProducts = products.filter((item) => item.category === "Wireless")
-        const filteredPopularProducts = products.filter((item) => item.category === "Watch")
+        const filteredMobileProducts = products.filter((item) => item.category === "table");
+        const filteredWirelessProducts = products.filter((item) => item.category === "lamp")
+        const filteredPopularProducts = products.filter((item) => item.category === "clock")
+        const filteredPlantProducts = products.filter((item) => item.category === "plant")
 
 
 
@@ -46,6 +49,7 @@ const Home = () => {
         setMobileProduct(filteredMobileProducts);
         setWirelessProduct(filteredWirelessProducts);
         setPopularProduct(filteredPopularProducts);
+        setPlantProduct(filteredPlantProducts);
     }, [products]);
     return (
 
@@ -141,6 +145,11 @@ const Home = () => {
                         {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : (
                                 <ProductList data={wirelessProducts} />)
+                        }
+
+                        {
+                            loading ? (<h5 className='fw-bold'> Loading.... </h5>) : (
+                                <ProductList data={plantProducts} />)
                         }
 
                     </Row>
