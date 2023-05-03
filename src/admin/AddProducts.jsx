@@ -52,7 +52,7 @@ const AddProducts = () => {
                             description: enterDescription,
                             category: enterCategory,
                             price: enterPrice,
-                            imgUrl: downloadURL
+                            imgUrl: downloadURL,
 
                         });
                     });

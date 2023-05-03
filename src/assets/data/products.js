@@ -303,7 +303,7 @@ const products = [
     productName: "Buffet Lamb",
     imgUrl: productImg10,
     category: "lamp",
-    price: 99,
+    price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -325,7 +325,7 @@ const products = [
     productName: "Pilke 18 Pendant Lamp",
     imgUrl: productImg14,
     category: "lamp",
-    price: 114,
+    price: 159,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -348,7 +348,7 @@ const products = [
     productName: "Caché XL Pendant Lamp",
     imgUrl: productImg15,
     category: "lamp",
-    price: 109,
+    price: 169,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -371,7 +371,7 @@ const products = [
     productName: "Pilke 20 Pendant Lamp",
     imgUrl: productImg16,
     category: "lamp",
-    price: 125,
+    price: 175,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -394,7 +394,7 @@ const products = [
     productName: "Round Wall Mirror",
     imgUrl: productImg17,
     category: "clock",
-    price: 899,
+    price: 149,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -417,7 +417,7 @@ const products = [
     productName: "Acer Aspire E 15",
     imgUrl: productImg18,
     category: "clock",
-    price: 699,
+    price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -440,7 +440,7 @@ const products = [
     productName: "Wood Clock",
     imgUrl: productImg19,
     category: "clock",
-    price: 299,
+    price: 159,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -463,7 +463,7 @@ const products = [
     productName: "Samsung Galaxy Tab A",
     imgUrl: productImg20,
     category: "clock",
-    price: 299,
+    price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -486,7 +486,7 @@ const products = [
     productName: "Porro Cook",
     imgUrl: productImg21,
     category: "plant",
-    price: 89,
+    price: 119,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -509,7 +509,7 @@ const products = [
     productName: "Adipiscing Cursus",
     imgUrl: productImg22,
     category: "plant",
-    price: 99,
+    price: 109,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -532,7 +532,7 @@ const products = [
     productName: "Sapien Libero",
     imgUrl: productImg23,
     category: "plant",
-    price: 89,
+    price: 129,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -555,7 +555,7 @@ const products = [
     productName: "Donec Eu Cook",
     imgUrl: productImg25,
     category: "plant",
-    price: 99,
+    price: 115,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:

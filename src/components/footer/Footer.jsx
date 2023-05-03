@@ -15,7 +15,7 @@ const Footer = () => {
                         <div className="logo">
                             {/* <img src={logo} alt="logo" /> */}
                             <div>
-                                <h1 className='text-white'>4R Fire</h1>
+                                <h1 className='text-white'>CartMax</h1>
                             </div>
                         </div>
                         <p className='footer_text mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit cum quod, repellat

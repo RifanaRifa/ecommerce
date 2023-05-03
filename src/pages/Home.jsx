@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react'
 
 import Helmet from '../components/helmet/Helmet';
 import { Container, Row, Col } from "reactstrap";
-import heroImg from "../assets/images/hero-img.png";
+import heroImg from "../assets/images/hero-img-1.png";
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Services from '../services/Services';
 import ProductList from '../components/UI/ProductList';
 
-import counterImg from "../assets/images/counter-timer-img.png";
+import counterImg from "../assets/images/counter-timer-im.png";
 import Clock from '../components/UI/Clock';
 import useGetData from '../custom-hooks/useGetData';
 
@@ -58,17 +58,15 @@ const Home = () => {
                                 <p className='hero_subtitle' > Trending Product in {year} </p>
 
                                 <h2>Make Your Interior More Minimalistic & Modern</h2>
-                                <p>Lorem ipsum dolor   </p>
+                                <p>We can make all your interior needs special for you. Find premium chairs, furniture and living room decorations only on multimart </p>
 
                                 <motion.button whileTap={{ scale: 1.2 }} className='buy_btn'> <Link to="/shop">SHOP NOW</Link> </motion.button>
                                 {/* < button className='buy_btn'> <Link to="/shop">SHOP NOW</Link></button> */}
                             </div>
                         </Col>
 
-                        <Col lg="6" md="6">
-                            <div className='hero_img'>
-                                <img src={heroImg} alt="" />
-                            </div>
+                        <Col lg="6" md="6" >
+                            <img src={heroImg} alt="" />
 
                         </Col>
                     </Row>
