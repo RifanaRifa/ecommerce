@@ -1,14 +1,15 @@
 import productImg01 from "../images/sofa-1.jpg";
 import productImg02 from "../images/sofa-2.jpg";
-import productImg03 from "../images/sofa-3.png";
+import productImg03 from "../images/sofa-3.jpg";
 import productImg033 from "../images/sofa-033.jpg";
 
 import productImg04 from "../images/sofa-4.jpg";
 import productImg05 from "../images/sofa-5.jpg";
 import productImg06 from "../images/sofa-6.jpg";
-import productImg007 from "../images/tab-1.jpg";
-
 import productImg07 from "../images/sofa-7.jpg";
+
+
+import productImg007 from "../images/tab-1.jpg";
 import productImg08 from "../images/tab-2.jpg";
 import productImg09 from "../images/tab-3.png";
 import productImg10 from "../images/tab-4.jpg";

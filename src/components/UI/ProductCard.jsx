@@ -35,14 +35,14 @@ const ProductCard = ({ item }) => {
 
     return (
         <Col lg="3" md="4" mb="4" className='mb-2'>
-            <div className="product_item ">
+            <div className="product_item">
                 <div className='product_img'>
-                    <motion.img whileHover={{ scale: 0.9 }} src={item.imgUrl} alt="" />
+                    <img src={item.imgUrl} alt="" />
                 </div>
 
                 <div className='p-2 product_info'>
                     <h3 className='product_name'><Link to={`/shop/${item.id}`}>{item.productName}</Link></h3>
-                    {/* <h3 className='product_name'><Link to="shop/id">{item.productName}</Link></h3> */}
+                    {/* <h3 className='product_name'><Link to="/shop/id">{item.productName}</Link></h3> */}
                     {/* <span className='text-center d-block'>Chair</span> text box center la varum*/}
                     <span>{item.category}</span>
                 </div>

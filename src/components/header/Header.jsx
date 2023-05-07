@@ -91,14 +91,14 @@ const Header = () => {
     // };
 
     return (
-        <header className="header"  >
+        <header className="header" ref={headerRef} >
             <Container>
                 <Row>
                     <div className="nav_wrapper">
                         <div className="logo">
                             <img src={logo} alt="logo" />
                             <div>
-                                <h1>Multimart</h1>
+                                <h1>CartMax</h1>
                             </div>
                         </div>
 
@@ -163,7 +163,7 @@ const Header = () => {
                                             <div className='d-flex align-items-center  justify-content-center flex-column'>
                                                 <Link to="/signup">Signup</Link>
                                                 <Link to="/login"> Login</Link>
-                                                <Link to="/dashboard"> Dashboard</Link>
+                                                {/* <Link to="/dashboard"> Dashboard</Link> */}
                                             </div>
                                     }
 

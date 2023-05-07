@@ -1,6 +1,19 @@
 .product_item {
     cursor: pointer;
+    /* margin-bottom: 10px; */
+    /* border: 1px solid gray; */
+    padding: 10px;
+    border-radius: 5px;
+    /* background: #f3f3f3; */
+    margin-bottom: 30px;
 
+
+}
+
+.product_item:hover {
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #d3d3d3,
+        -20px -20px 60px #ededed;
 }
 
 .product_info h3 a {

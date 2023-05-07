@@ -15,16 +15,17 @@
  .logo {
      display: flex;
      align-items: center;
-     /* column-gap: 8px; */
+     column-gap: 8px;
+
  }
 
  .logo img {
-     width: 45px;
-     height: 45px;
+     width: 40px;
+     height: 40px;
  }
 
  .logo h1 {
-     font-size: 1.2rem;
+     font-size: 1.5rem;
      font-weight: 700;
      color: var(--primary-color);
  }
@@ -81,8 +82,8 @@
  }
 
  .nav_icons .profile img {
-     width: 30px;
-     height: 30px;
+     width: 50px;
+     height: 50px;
      cursor: pointer;
      border-radius: 50%;
 
@@ -92,17 +93,19 @@
  .nav_icons .profile {
      position: relative;
      z-index: 9;
+
  }
 
  .nav_icons .profile .profile_actions {
      position: absolute;
      top: 98%;
      left: 0;
-     width: 150px;
+     width: 100px;
      z-index: 10;
      padding: 15px;
      display: flex;
      align-items: center;
+     text-align: center;
      flex-direction: column;
      background: var(--card-bg-01);
      line-height: 30px;

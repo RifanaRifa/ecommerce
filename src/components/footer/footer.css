@@ -11,11 +11,13 @@
 
 .footer_quick-links ul li {
     background: transparent !important;
-    list-style: none;
+
 }
 
 .footer_quick-links ul li a {
     color: rgba(255, 255, 255, 0.735);
+
+    text-decoration: none;
 }
 
 .quick_links-title {

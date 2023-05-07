@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useParams } from 'react-router-dom';
-
+import products from '../assets/data/products';
 import Helmet from '../components/helmet/Helmet';
 import CommonSection from '../components/UI/CommonSection';
 import "../styles/product-details.css";
@@ -11,12 +11,12 @@ import { useDispatch } from 'react-redux';
 import { cartActions } from '../redux/slice/cartSlice';
 import { toast } from "react-toastify";
 
-import { db } from "../firebase.config";
-import { doc, getDoc } from "firebase/firestore"
-import useGetData from "../custom-hooks/useGetData"
+// import { db } from "../firebase.config";
+// import { doc, getDoc } from "firebase/firestore"
+// import useGetData from "../custom-hooks/useGetData"
 
 const ProductDetails = () => {
-    const [product, setProduct] = useState({});
+    // const [product, setProduct] = useState({});
     const [tab, setTab] = useState('desc');
     const reviewUser = useRef('');
     const reviewMsg = useRef('');
@@ -26,25 +26,25 @@ const ProductDetails = () => {
 
     const { id } = useParams();
 
-    const { data: products } = useGetData("products");
-    // const product = products.find(item => item.id === id)
+    // const { data: products } = useGetData("products");
+    const product = products.find(item => item.id === id)
 
-    const docRef = doc(db, " products", id)
-    useEffect(() => {
-        const getProduct = async () => {
-            const docSnap = await getDoc(docRef);
+    // const docRef = doc(db, " products", id)
+    // useEffect(() => {
+    //     const getProduct = async () => {
+    //         const docSnap = await getDoc(docRef);
 
-            if (docSnap.exists()) {
-                setProduct(docSnap.data())
-            } else {
-                console.log("no products!")
-            }
-        };
-        getProduct();
-    }, []);
+    //         if (docSnap.exists()) {
+    //             setProduct(docSnap.data())
+    //         } else {
+    //             console.log("no products!")
+    //         }
+    //     };
+    //     getProduct();
+    // }, []);
 
     const { imgUrl, productName, price,
-        //  avgRating, reviews,
+        avgRating, reviews,
         description, shortDesc, category } = product;
 
     const relatedProducts = products.filter(item => item.category === category);
@@ -88,7 +88,7 @@ const ProductDetails = () => {
             <CommonSection title={productName} />
 
 
-            <section className='pt-0'>
+            <section className='mt-5'>
                 <Container>
                     <Row>
                         <Col lg="6">
@@ -105,10 +105,10 @@ const ProductDetails = () => {
                                         <span ><i class="ri-star-s-fill"></i></span>
                                         <span > <i class="ri-star-half-s-line"></i></span>
                                     </div>
-                                    {/* <p>({avgRating}ratings)</p> */}
-                                    <p>
-                                        {/* (<span>{avgRating}</span> ratings) */}
-                                    </p>
+                                    <p>({avgRating}ratings)</p>
+                                    {/* <p>
+                                        (<span>{avgRating}</span> ratings)
+                                    </p> */}
 
                                 </div>
                                 <div className='d-flex align-items-center gap-5'>
@@ -138,7 +138,7 @@ const ProductDetails = () => {
                                 > Description </h6>
                                 <h6 className={`${tab === 'rev' ? 'active_tab' : ""}`}
                                     onClick={() => setTab('rev')}>
-                                    Reviews
+                                    Reviews({reviews.length})
                                 </h6>
 
                             </div>
@@ -150,7 +150,7 @@ const ProductDetails = () => {
                                     <div className='product_review mt-5'>
 
                                         <div className='review_wrapper'>
-                                            {/* <ul>
+                                            <ul>
                                                 {
                                                     reviews?.map((item, index) => (
                                                         <li key={index} className="mb-4">
@@ -160,7 +160,7 @@ const ProductDetails = () => {
                                                         </li>
                                                     ))
                                                 }
-                                            </ul> */}
+                                            </ul>
                                             <div className="review_form">
                                                 <h4>Leave Your Experience</h4>
                                                 <form action="" onSubmit={submitHandler}>
