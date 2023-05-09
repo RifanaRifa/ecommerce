@@ -18,12 +18,13 @@ import counterImg from "../assets/images/baner-1.jpg";
 const Home = () => {
     // const { data: products, loading } = useGetData("products")
 
-    const [trendingProducts, setTrendingProducts] = useState([]);
-    const [chairProducts, setChairProduct] = useState([]);
-    const [bestSalesProducts, setBestSalesProducts] = useState([]);
     const [newLampProducts, setNewLampProduct] = useState([]);
+    const [chairProducts, setChairProduct] = useState([]);
+    const [bestSofaProducts, setBestSofaProducts] = useState([]);
+    const [newTableProducts, setNewTableProduct] = useState([]);
+    const [newClockProducts, setNewClockProduct] = useState([]);
     const [newPlantProducts, setNewPlantProduct] = useState([]);
-    const [popularProducts, setPopularProduct] = useState([]);
+
 
     // const [plantProducts, setPlantProduct] = useState([]);
 
@@ -31,14 +32,14 @@ const Home = () => {
     const year = new Date().getFullYear();
 
     useEffect(() => {
-        const filteredTrendingProducts = products.filter((item) => item.category === "lamp");
-        const filteredChairProducts = products.filter((item) => item.category === "sofa");
-        const filteredBestSalesProducts = products.filter((item) => item.category === "chair");
+        const filteredNewLampProducts = products.filter((item) => item.category === "lamp");
+        const filteredChairProducts = products.filter((item) => item.category === "chair");
+        const filteredBestSofaProducts = products.filter((item) => item.category === "sofa");
 
-        const filteredNewLampProducts = products.filter((item) => item.category === "table");
+        const filteredNewTableProducts = products.filter((item) => item.category === "table");
 
-        const filteredNewPlantProducts = products.filter((item) => item.category === "clock")
-        const filteredPopularProducts = products.filter((item) => item.category === "plant")
+        const filteredNewClockProducts = products.filter((item) => item.category === "clock")
+        const filteredNewPlantProducts = products.filter((item) => item.category === "plant")
 
 
 
@@ -47,12 +48,12 @@ const Home = () => {
 
 
         // setData(filterProducts);
-        setTrendingProducts(filteredTrendingProducts);
-        setChairProduct(filteredChairProducts);
-        setBestSalesProducts(filteredBestSalesProducts);
         setNewLampProduct(filteredNewLampProducts);
+        setChairProduct(filteredChairProducts);
+        setBestSofaProducts(filteredBestSofaProducts);
+        setNewTableProduct(filteredNewTableProducts);
+        setNewClockProduct(filteredNewClockProducts);
         setNewPlantProduct(filteredNewPlantProducts);
-        setPopularProduct(filteredPopularProducts);
 
     }, []);
     // }, [products]);
@@ -93,7 +94,7 @@ const Home = () => {
                         </Col>
                         {/* {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : ( */}
-                        <ProductList data={trendingProducts} />
+                        <ProductList data={newLampProducts} />
 
 
                         {/* } */}
@@ -114,8 +115,8 @@ const Home = () => {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : (
                                 <ProductList data={bestSalesProducts} />)
                         } */}
-                        <ProductList data={bestSalesProducts} />
                         <ProductList data={chairProducts} />
+                        <ProductList data={bestSofaProducts} />
                     </Row>
                 </Container>
             </section>
@@ -184,12 +185,12 @@ const Home = () => {
 
                         {/* {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : ( */}
-                        <ProductList data={newLampProducts} />
+                        <ProductList data={newTableProducts} />
                         {/* } */}
 
 
 
-                        <ProductList data={newPlantProducts} />
+                        <ProductList data={newClockProducts} />
 
                         {/* {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : (
@@ -221,7 +222,7 @@ const Home = () => {
                         </Col>
                         {/* {
                             loading ? (<h5 className='fw-bold'> Loading.... </h5>) : ( */}
-                        <ProductList data={popularProducts} />
+                        <ProductList data={newPlantProducts} />
                         {/* } */}
                     </Row>
                 </Container>
