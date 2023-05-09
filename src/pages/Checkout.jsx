@@ -59,7 +59,7 @@ const Checkout = () => {
 
 
                                 <h4>Total Cost : <span>${totalAmount}</span></h4>
-                                <button className='buy_btn auth_btn w-100 '>Place an order</button>
+                                <button className='place_btn w-100'>Place an order</button>
                             </div>
 
 

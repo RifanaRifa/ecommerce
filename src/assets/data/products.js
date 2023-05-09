@@ -6,7 +6,7 @@ import productImg033 from "../images/sofa-033.jpg";
 import productImg04 from "../images/sofa-4.jpg";
 import productImg05 from "../images/sofa-5.jpg";
 import productImg06 from "../images/sofa-6.jpg";
-import productImg07 from "../images/sofa-7.jpg";
+import productImg07 from "../images/sofa.7.png";
 
 
 import productImg007 from "../images/tab-1.jpg";
@@ -33,7 +33,7 @@ import productImg25 from "../images/flo-4.jpg";
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "Stockholm Minimal Chair",
     imgUrl: productImg01,
     category: "sofa",
     price: 293,
@@ -52,7 +52,7 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Sauder Boulevard Cafe Chair",
     imgUrl: productImg02,
     category: "sofa",
     price: 253,

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import products from '../assets/data/products';
 
-
 import Helmet from '../components/helmet/Helmet';
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img-1.png";
@@ -11,7 +10,8 @@ import { motion } from "framer-motion";
 import Services from '../services/Services';
 import ProductList from '../components/UI/ProductList';
 
-import counterImg from "../assets/images/counter-timer-im.png";
+import counterImg1 from "../assets/images/baner-2.jpg";
+import counterImg from "../assets/images/baner-1.jpg";
 // import Clock from '../components/UI/Clock';
 // import useGetData from '../custom-hooks/useGetData';
 
@@ -120,20 +120,56 @@ const Home = () => {
                 </Container>
             </section>
 
-            <section className='timer_count'>
+            <section className='offers'>
                 <Container>
                     <Row>
-                        <Col lg="6" md='12' className='count_down-col'>
-                            <div className='clock_top-content'>
+                        <Col lg="6" md="6" className='offer_sofa'>
+                            <div>
+                                <div className='offer_sofaimg'>
+                                    <img src={counterImg} alt="" />
+                                </div>
+
+                                <div className='offer_con1'>
+                                    <p>Get Upto</p>
+                                    <h2>40% OFF</h2>
+                                    <motion.button whileTap={{ scale: 1.2 }} className='buy_btn off_btn'><Link to="/shop">Shop Now</Link></motion.button>
+                                </div>
+
+
+
 
 
                             </div>
-                            {/* <Clock /> */}
-                            <motion.button whileTap={{ scale: 1.2 }} className='buy_btn store_btn'><Link to="/shop">Visit Store</Link></motion.button>
+
                         </Col>
-                        <Col lg="6" md='12' className='text-end counter_img'>
+                        <Col lg="6" md='6' className='offer_lamp'>
+                            <div>
+                                <div className='offer_lampimg'>
+                                    <img src={counterImg1} alt="" />
+                                </div>
+
+                                <div className='offer_con2'>
+                                    <p>Flat Upto</p>
+                                    <h2>60% OFF</h2>
+                                    <motion.button whileTap={{ scale: 1.2 }} className='buy_btn off_btn'><Link to="/shop">Shop Now</Link></motion.button>
+                                </div>
+
+
+                            </div>
+
+                        </Col>
+                        {/* 
+                        <Col>
+                            <div className='clock_top-content'>
+                                <h1>Get Best Discount</h1>
+                                <p>t is a long established fact that a reader will be distracted by the readable content</p>
+                                <motion.button whileTap={{ scale: 1.2 }} className='buy_btn store_btn'><Link to="/shop">Visit Store</Link></motion.button>
+                            </div>
+                        </Col> */}
+
+                        {/* <Col lg="3" md='12' className='text-end counter_img'>
                             <img src={counterImg} alt="" />
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </section>

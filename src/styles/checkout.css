@@ -10,9 +10,15 @@
     border-radius: 5px;
 }
 
-.auth_btn {
+.place_btn {
     background-color: #fff;
     color: black;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+
 }
 
 .checkout_cart h6,

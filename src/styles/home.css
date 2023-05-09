@@ -53,14 +53,49 @@
 }
 
 .timer_count {
-    background: #00173f;
-    height: 500px;
+    background: #63728c;
+    /* height: 500px; */
 }
 
-.timer_count img {
-    width: 90% !important;
-    height: 90% !important;
-    object-fit: contain;
+.offer_sofaimg {
+    height: 400px;
+}
+
+
+.offer_sofaimg img {
+    height: 100%;
+
+}
+
+.offer_lampimg {
+    height: 400px;
+}
+
+
+.offer_lampimg img {
+    height: 100%;
+
+}
+
+.offer_sofa {
+    position: relative;
+}
+
+.offer_con1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.offer_lamp {
+    position: relative;
+}
+
+
+.offer_con2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
 }
 
 .store_btn {
