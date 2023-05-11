@@ -3,7 +3,6 @@ import "../styles/cart.css";
 import Helmet from "../components/helmet/Helmet";
 import CommoSection from '../components/UI/CommonSection';
 import { Container, Row, Col } from "reactstrap";
-// import tdImg from "../assets/images/arm-chair-01.jpg";
 import { motion } from "framer-motion";
 import { cartActions } from "../redux/slice/cartSlice";
 import { useSelector, useDispatch } from 'react-redux';
@@ -41,24 +40,14 @@ const Cart = () => {
                                             {
                                                 cartItems.map((item, index) => (
                                                     <Tr item={item} key={index} />
-                                                    // < tr key={index}>
-                                                    //     <td><img src={item.imgUrl} alt="" /> </td>
-                                                    //     <td>{item.productName}</td>
-                                                    //     <td>{item.price}</td>
-                                                    //     <td>{item.quantity}px</td>
-                                                    //     <td>< motion.i whileTap={{ scale: 1.2 }} class="ri-delete-bin-line"></motion.i></td>
-                                                    // </tr>
                                                 ))
 
                                             }
 
                                         </tbody>
-
-
                                     </table>
                                 )
                             }
-
                         </Col>
 
                         <Col lg="3">
@@ -86,9 +75,6 @@ const Cart = () => {
     );
 };
 
-
-
-
 const Tr = ({ item }) => {
 
     const dispatch = useDispatch()
@@ -105,6 +91,6 @@ const Tr = ({ item }) => {
             <td>< motion.i whileTap={{ scale: 1.2 }} onClick={deleteProduct} class="ri-delete-bin-line"></motion.i></td>
         </tr>
     )
-}
+};
 
 export default Cart;

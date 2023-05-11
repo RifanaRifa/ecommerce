@@ -36,7 +36,6 @@ const Signup = () => {
                 password);
 
             const user = userCredential.user;
-            // console.log(user);
 
             const storageRef = ref(storage, `images/${Date.now() + username}`);
             const uploadTask = uploadBytesResumable(storageRef, file);
@@ -46,13 +45,12 @@ const Signup = () => {
 
             }, () => {
                 getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-                    //update user profile
                     await updateProfile(user, {
                         displayName: username,
                         photoURL: downloadURL,
                     });
 
-                    //store user data  in firestore database
+
                     await setDoc(doc(db, "users", user.uid), {
                         uid: user.uid,
                         displayName: username,
@@ -63,7 +61,7 @@ const Signup = () => {
             }
             );
 
-            //  console.log(user);
+
             setLoading(false)
             toast.success("Account created")
             navigate("/login")
@@ -117,7 +115,7 @@ const Signup = () => {
                                         />
                                     </FormGroup>
 
-                                    <button type="submit" className='buy_btn auth_btn'>Create an Account</button>
+                                    <button type="submit" className='authlog_btn'>Create an Account</button>
                                     <p>Already have an account?{" "}
                                         <Link to="/login"> Login </Link> </p>
 
@@ -131,12 +129,8 @@ const Signup = () => {
                 </Container>
             </section>
 
-
-
-
-
         </Helmet>
     )
-}
+};
 
 export default Signup;

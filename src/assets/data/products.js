@@ -6,7 +6,7 @@ import productImg033 from "../images/sofa-033.jpg";
 import productImg04 from "../images/sofa-4.jpg";
 import productImg05 from "../images/sofa-5.jpg";
 import productImg06 from "../images/sofa-6.jpg";
-import productImg07 from "../images/sofa.7.png";
+import productImg07 from "../images/sofa-7.jpg";
 
 
 import productImg007 from "../images/tab-1.jpg";
@@ -35,7 +35,7 @@ const products = [
     id: "01",
     productName: "Stockholm Minimal Chair",
     imgUrl: productImg01,
-    category: "sofa",
+    category: "chair",
     price: 293,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -54,7 +54,7 @@ const products = [
     id: "02",
     productName: "Sauder Boulevard Cafe Chair",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "chair",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -95,8 +95,10 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
+
   {
-    id: "26",
+    id: "22",
     productName: "Organic Chair Fiberglass ",
     imgUrl: productImg033,
     category: "chair",
@@ -117,6 +119,8 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
+
   {
     id: "04",
     productName: "Wegner Classic 290",
@@ -189,7 +193,7 @@ const products = [
     id: "07",
     productName: "OW602/603 Sofa",
     imgUrl: productImg07,
-    category: "Sofa",
+    category: "sofa",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -208,28 +212,7 @@ const products = [
     avgRating: 4.7,
   },
 
-  {
-    id: "27",
-    productName: "Triiio Dining Table",
-    imgUrl: productImg007,
-    category: "table",
-    price: 279,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+
 
   {
     id: "08",
@@ -299,12 +282,13 @@ const products = [
     ],
     avgRating: 4.8,
   },
+
   {
-    id: "25",
-    productName: "Buffet Lamb",
-    imgUrl: productImg10,
-    category: "lamp",
-    price: 199,
+    id: "23",
+    productName: "Triiio Dining Table",
+    imgUrl: productImg007,
+    category: "table",
+    price: 279,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -321,6 +305,8 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
+
   {
     id: "11",
     productName: "Pilke 18 Pendant Lamp",
@@ -343,6 +329,9 @@ const products = [
     ],
     avgRating: 4.8,
   },
+
+
+
 
   {
     id: "12",
@@ -389,6 +378,30 @@ const products = [
     ],
     avgRating: 4.8,
   },
+
+  {
+    id: "24",
+    productName: "Buffet Lamb",
+    imgUrl: productImg10,
+    category: "lamp",
+    price: 199,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.6,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
 
   {
     id: "14",
@@ -552,7 +565,7 @@ const products = [
   },
 
   {
-    id: "22",
+    id: "21",
     productName: "Donec Eu Cook",
     imgUrl: productImg25,
     category: "plant",
@@ -573,6 +586,15 @@ const products = [
     ],
     avgRating: 4.8,
   },
+
+
+
+
+
+
+
+
+
 ];
 
 export default products;

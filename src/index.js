@@ -20,27 +20,13 @@ root.render(
           position="top-right"
           theme="dark"
           autoClose={3000}
-          // hideProgressBar={false}
-          // newestOnTop={false}
           closeOnClick
-          // rtl={false}
-          // pauseOnFocusLoss
-          // draggable
-          // pauseOnClick
-          // pauseOnHover
           pauseOnHover={false}
-
-        // theme="light"
-        // theme="dark"
         />
-        {/* Same as */}
-        {/* <ToastContainer />//itha edutha tha dark sucess box varum*/}
         <App />
       </Provider>
 
     </BrowserRouter>
-
-
   </React.StrictMode>
 );
 

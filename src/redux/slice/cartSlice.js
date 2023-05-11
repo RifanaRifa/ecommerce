@@ -1,5 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'//rxsli apdi type pani enter paanna import const ellam varum
-
+import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     cartItems: [],
     totalAmount: 0,
@@ -36,10 +35,7 @@ const cartSlice = createSlice({
 
             state.totalAmount = state.cartItems.reduce((total, item) => total + Number(item.price) * Number(item.quantity), 0
             );
-            // console.log(state.totalQuantity);
-            // console.log(state.cartItems);
-            // console.log(newItem);//data ella varum ithuku apro react toasty install import productcard la
-            // next google la athey page la demo is word la click pani toastcontainer index la import pannanum mela import toast ah
+
         },
 
 
@@ -60,19 +56,6 @@ const cartSlice = createSlice({
 
     },
 
-    // deleteItem: (state, action) => {
-    //     const id = action.payload
-    //     const existingItem = state.cartItems.find(item => item.id === id)
-
-    //     if (existingItem) {
-    //         state.cartItems = state.cartItems.filter(item => item.id === id)
-    //         state.totalQuantity = state.totalQuantity - existingItem.quantity
-    //     }
-
-    //     state.totalAmount = state.cartItems.reduce((total, item) => total + Number(item.price) * Number(item.quantity)
-    //     );
-
-    // }
 });
 
 export const cartActions = cartSlice.actions;

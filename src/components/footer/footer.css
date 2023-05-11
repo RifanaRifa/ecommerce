@@ -1,7 +1,8 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 30px;
-    background: #00173f;
+    background: var(--primary-color);
+
 }
 
 .footer_text {

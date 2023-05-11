@@ -62,14 +62,12 @@ const Checkout = () => {
                                 <button className='place_btn w-100'>Place an order</button>
                             </div>
 
-
-
                         </Col>
                     </Row>
                 </Container>
             </section>
         </Helmet>
     )
-}
+};
 
 export default Checkout;

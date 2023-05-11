@@ -1,6 +1,5 @@
 .service_item {
     padding: 20px;
-    /* background: var(--card-bg-01); */
     display: flex;
     align-items: center;
     column-gap: 0.7rem;
@@ -49,8 +48,6 @@
 }
 
 @media only screen and (max-width:768px) {
-    /* .service_item {} */
-
     .service_item span i {
         font-size: 1.5rem;
         padding: 5px;

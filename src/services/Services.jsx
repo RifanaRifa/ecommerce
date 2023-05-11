@@ -30,20 +30,11 @@ const Services = () => {
 
 
                         ))}
-
-
                 </Row>
-
-
-
             </Container>
-
-
-
-
         </section>
 
     )
-}
+};
 
-export default Services
+export default Services;

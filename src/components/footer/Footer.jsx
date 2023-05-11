@@ -1,7 +1,6 @@
 import React from 'react'
 import "./footer.css";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-// import logo from '../../assets/images/eco-logo.png'
 import { Link } from 'react-router-dom';
 
 
@@ -13,7 +12,6 @@ const Footer = () => {
                 <Row>
                     <Col lg="4" className='mb-4' md="12">
                         <div className="logo">
-                            {/* <img src={logo} alt="logo" /> */}
                             <div>
                                 <h1 className='text-white'>CartMax</h1>
                             </div>
@@ -104,6 +102,6 @@ const Footer = () => {
             </Container>
         </footer>
     )
-}
+};
 
-export default Footer
+export default Footer;

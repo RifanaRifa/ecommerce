@@ -1,6 +1,6 @@
 import React from 'react'
 import CommonSection from '../components/UI/CommonSection';
-import Helmet from "../components/helmet/Helmet";//redux ku apro import
+import Helmet from "../components/helmet/Helmet";
 import { Container, Row, Col } from "reactstrap";
 import "../styles/shop.css";
 import products from '../assets/data/products';
@@ -12,7 +12,6 @@ import ProductList from "../components/UI/ProductList";
 
 const Shop = () => {
     const [productsData, setProductsData] = useState(products);
-    //cetegory la sofa click panna athu madum varanum athuku code
     const handleFilter = e => {
 
         const filterValue = e.target.value
@@ -63,7 +62,6 @@ const Shop = () => {
                     <Row>
                         <Col lg="3" md="6">
                             <div className='filter_widget'>
-                                {/* select>option4 click */}
                                 <select onChange={handleFilter}>
                                     <option>Filter By Category </option>
                                     <option value="sofa">Sofa</option>
@@ -76,18 +74,7 @@ const Shop = () => {
                             </div>
                         </Col>
 
-
-                        {/* <Col lg="3" md="6" className='text-end'>
-                            <div className='filter_widget'>
-                                <select>
-                                    <option>Sort By </option>
-                                    <option value="ascending">Ascending</option>
-                                    <option value="descending">Descending</option>
-                                </select>
-                            </div>
-                        </Col> */}
-
-                        <Col lg="6" md="12">
+                        <Col lg="9" md="12" className='product_search'>
                             <div className='search_box'>
                                 <input type="text" placeholder='search.....' onChange={handleSearch} />
                                 <span><i class="ri-search-line"></i></span>
@@ -113,4 +100,4 @@ const Shop = () => {
     );
 };
 
-export default Shop
+export default Shop;

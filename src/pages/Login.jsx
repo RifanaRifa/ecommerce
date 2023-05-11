@@ -23,7 +23,7 @@ const Login = () => {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
 
-            // console.log(user);
+
             setLoading(false)
             toast.success('successfully logged in')
             navigate("/checkout")
@@ -61,16 +61,11 @@ const Login = () => {
                                         />
                                     </FormGroup>
 
-
-
-
-
-                                    <button type="submit" className='buy_btn auth_btn'>Login</button>
+                                    <button type="submit" className='authlog_btn'>Login</button>
                                     <p>Don't have an account?{" "}
                                         <Link to="/signup"> Create an account </Link> </p>
 
                                 </Form>
-
                             </Col>
                         )
                         };
@@ -78,12 +73,8 @@ const Login = () => {
                 </Container>
             </section>
 
-
-
-
-
         </Helmet>
     )
-}
+};
 
 export default Login;

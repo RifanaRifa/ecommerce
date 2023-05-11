@@ -1,4 +1,4 @@
-import React from 'react'//rafce enter  
+import React from 'react'
 import { Container } from 'reactstrap'
 import "../../styles/common-section.css";
 
@@ -11,6 +11,6 @@ const CommoSection = ({ title }) => {
 
     </section>
   )
-}
+};
 
-export default CommoSection
+export default CommoSection;

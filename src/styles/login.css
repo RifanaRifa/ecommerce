@@ -4,10 +4,14 @@
     border-radius: 5px;
 }
 
-.auth_btn {
+.authlog_btn {
     background: #fff !important;
     color: var(--primary-color);
     font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .auth_form p {

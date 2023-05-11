@@ -1,6 +1,6 @@
 .hero_section {
     background: var(--hero-bg);
-    /* height: 600px; */
+
 }
 
 .hero_content h2 {
@@ -54,7 +54,7 @@
 
 .timer_count {
     background: #63728c;
-    /* height: 500px; */
+
 }
 
 .offer_sofaimg {

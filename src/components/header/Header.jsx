@@ -14,7 +14,7 @@ import { auth } from "../../firebase.config";
 import { toast } from "react-toastify";
 
 
-import { useSelector } from 'react-redux';//redux la ullathu
+import { useSelector } from 'react-redux';
 
 const nav_links = [
     {
@@ -33,17 +33,12 @@ const nav_links = [
     },
 ];
 
-
-
-
-
-
 const Header = () => {
     const headerRef = useRef(null);
     const totalQuantity = useSelector((state) => state.cart.totalQuantity)//product quantity inclrs(111 line )
 
     const profileActionRef = useRef(null);
-    // console.log(profileActionRef);
+
 
     const menuRef = useRef(null);
 
@@ -88,7 +83,7 @@ const Header = () => {
     const toggleProfileActions = () => profileActionRef.current.classList.toggle("show_profileActions")
 
 
-    // };
+
 
     return (
         <header className="header" ref={headerRef} >
@@ -113,63 +108,35 @@ const Header = () => {
                                         </li>
                                     ))
                                 }
-
-
-
-                                {/* <li className="nav_item">
-                                <NavLink to="home">Home</NavLink>
-                            </li>
-
-                            <li className="nav_item">
-                                <NavLink to="home">Shop</NavLink>
-                            </li>
-
-                            <li className="nav_item">
-                                <NavLink to="home">Cart</NavLink>
-                            </li> */}
-
                             </ul>
                         </div>
-
-
-
 
                         <div className="nav_icons">
                             <span className="fav_icon"><i class="ri-heart-line"></i>
                                 <span className="badge">2</span>
 
                             </span>
-
-                            {/* <span className="cart_icon" > */}
                             <span className="cart_icon" onClick={navigateToCart} >
                                 <i class="ri-shopping-bag-line"></i>
-                                {/* <span className="badge">2</span> */}
                                 <span className="badge">{totalQuantity}</span>
                             </span>
 
                             <div className='profile'>
-
-                                {/* <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt="" */}
                                 <span>
                                     <motion.img whileTap={{ scale: 1.2 }}
                                         src={currentUser ? currentUser.photoURL : userIcon} alt="" onClick={toggleProfileActions} />
                                 </span>
-                                {/* < img src={userIcon} alt="" /> */}
-                                {/* <p>{currentUser.displayName}</p> */}
 
                                 <div className="profile_actions" ref={profileActionRef} onClick={toggleProfileActions} >
                                     {
                                         currentUser ? <span onClick={logout}>Logout</span> :
                                             <div className='d-flex align-items-center  justify-content-center flex-column'>
-                                                <Link to="/signup">Signup</Link>
-                                                <Link to="/login"> Login</Link>
-                                                {/* <Link to="/dashboard"> Dashboard</Link> */}
+                                                <div className='sign_btn'>
+                                                    <Link to="/signup">Signup</Link>
+                                                    <Link to="/login"> Login</Link>
+                                                </div>
                                             </div>
                                     }
-
-
-
-
                                 </div>
                             </div>
 
@@ -177,11 +144,6 @@ const Header = () => {
                                 <span onClick={menuToggle}><i class="ri-menu-line"></i></span>
 
                             </div>
-
-
-
-
-
                         </div>
                     </div>
 
@@ -190,11 +152,6 @@ const Header = () => {
         </header >
     );
 };
-
-
-
-
-
 
 
 export default Header;
