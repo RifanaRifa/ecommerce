@@ -22,7 +22,7 @@ const ProductCard = ({ item }) => {
                 imgUrl: item.imgUrl,
             })
         );
-        toast.success("prouct added sucessfully");
+        toast.success("product added sucessfully");
 
     };
 

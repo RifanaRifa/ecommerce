@@ -137,6 +137,14 @@
         text-align: center;
 
     }
+
+    .offer_sofaimg {
+        height: 300px;
+    }
+
+    .offer_lampimg {
+        height: 300px;
+    }
 }
 
 @media only screen and(max-width: 768px) {

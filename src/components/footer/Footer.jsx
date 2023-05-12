@@ -16,29 +16,27 @@ const Footer = () => {
                                 <h1 className='text-white'>CartMax</h1>
                             </div>
                         </div>
-                        <p className='footer_text mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit cum quod, repellat
-                            debitis optio veniam nobis explicabo magnam atque mollitia
-                            incidunt deleniti sed facilis dolores adipisci fugit beatae dolor!</p>
+                        <p className='footer_text mt-4'>Quality materials & refined design perfect for all apartments and houses.Start decorating now!</p>
                     </Col>
-
+                    {/* MAKE YOUR HOUSEHOLD FEEL COZY WITH OUR FURNITURE AND DECORATIONS */}
                     <Col lg="3" md="3" className='mb-4'>
                         <div className='footer_quick-links '>
                             <h4 className='quick_links-title'>Top Categories</h4>
                             <ListGroup className='mb-3'>
                                 <ListGroupItem className='ps-0 border-0'>
-                                    <Link to="#">Mobile Phones</Link>
-                                </ListGroupItem>
-
-                                <ListGroupItem className='ps-0 border-0'>
                                     <Link to="#">Modern Sofa</Link>
                                 </ListGroupItem>
 
                                 <ListGroupItem className='ps-0 border-0'>
-                                    <Link to="#">Arm Chair</Link>
+                                    <Link to="#">Wall Clock</Link>
                                 </ListGroupItem>
 
                                 <ListGroupItem className='ps-0 border-0'>
-                                    <Link to="#">Smart Watches</Link>
+                                    <Link to="#"> Chair collection</Link>
+                                </ListGroupItem>
+
+                                <ListGroupItem className='ps-0 border-0'>
+                                    <Link to="#">Modern Table</Link>
                                 </ListGroupItem>
 
                             </ListGroup>
@@ -95,7 +93,7 @@ const Footer = () => {
                     </Col>
 
                     <Col lg="12">
-                        <p className='footer_copyright'> Copyright {year} developed by Rifana.All rights reserved.</p>
+                        <p className='footer_copyright'> Copyright &copy; {year} CartMax. All rights reserved.</p>
                     </Col>
 
                 </Row>
